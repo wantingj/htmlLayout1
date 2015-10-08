@@ -1,1 +1,160 @@
 @import "compass/reset";
+@import "compass";
+
+$mainWidth: 1300px;
+$menuActiveColor: #F98F00;
+$txtColor: #585858;
+
+body {
+    font-family: Arial;
+}
+
+.mainWidth {
+    margin: 0px auto;
+    width: $mainWidth;
+}
+
+h1 {
+    font-size: 6em;
+}
+h2 {
+    font-size: 5em;
+    color: #2C2C2C;
+}
+h3 {
+    font-size: 3em;
+    color: #2C2C2C;
+}
+p {
+    font-size: 1.4em;
+    color: $txtColor;
+    line-height: 1.4em;
+}
+
+.header {
+    background-color: #EEEEEE;
+    padding: 80px 0;
+    position: relative;
+    .logo {
+        position: absolute;
+        top: 20px;
+        display: inline;
+    }
+    ul {
+        margin-left: 220px;
+        li {
+            display: inline-block;
+            width: 200px;
+            font-size: 1.6em;
+            text-align: center;
+            color: #797979;
+            &.active {
+                color: $menuActiveColor;
+            }
+            a {
+                text-decoration: none;
+                display: block;
+                color: inherit;
+                &:hover {
+                    color: $menuActiveColor;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    border-top: 1px solid #D5D5D5;
+    border-bottom: 1px solid #D5D5D5;
+    section {
+        padding: 90px 0 100px 0;
+    }
+    .unit {
+        display: inline-block;
+        width: 47%;
+        vertical-align: top;
+    }
+
+    .blockTop {
+        background-color: #FDFDFD;
+        p {
+            padding: 5px 0 20px 0;
+        }
+        .shrink {
+            margin: 0px 4%;
+        }
+        .unit:first-child {
+            padding: 0 1%;
+        }
+    }
+    .blockBottom {
+        p {
+            padding-top: 40px;
+        }
+        .shrink {
+            margin: 0px 2%;
+        }
+        .unit {
+            padding-right: 2%;
+        }
+    }
+}
+
+.tryIt {
+    margin-left: 110px;
+    span: {
+        color: $txtColor;
+    }
+}
+
+.crystalButton {
+    $c1: #FFCA92;
+    $c2: #FEB03A;
+    $c3: #F99503;
+    $c4: #F99303;
+    $amount: 4%;
+
+    margin-bottom: 8px;
+    padding: 20px 56px;
+    font-size: 2.0em;
+    border-radius: 6px;
+    border: none;
+    color: white;
+
+    @include background-image(linear-gradient($c1 0%,$c2 50%,$c3 51%,$c4 100%));
+    &:hover {
+        @include background-image(linear-gradient(
+            lighten($c1, $amount) 0%,
+            lighten($c2, $amount) 50%,
+            lighten($c3, $amount) 51%,
+            lighten($c4, $amount) 100%
+        ));
+    }
+}
+
+.socialButton {
+    border-radius: 8px;
+    border: none;
+    background-color: #020202;
+    width: 45px;
+    height: 45px;
+    color: white;
+    font-size: 2em;
+    margin: 0 11px;
+    &:hover {
+        background-color: lighten(#020202, 30%);
+    }
+}
+
+.footer {
+    background-color: #EEEEEE;
+    line-height: 100px;
+    .mainWidth {
+        position: relative;
+        .social {
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
