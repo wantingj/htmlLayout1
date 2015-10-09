@@ -12,11 +12,17 @@ body {
 }
 
 .header {
+	.alignCenter {
+		width: 1300px;
+	}
 	background-color: #cccccc;
 	height: 10%;
 }
 
 .content {
+	.alignCenter {
+		width: 1300px;
+	}
 	section.banner {
 		height: 90%;
 		.centerBlock {
