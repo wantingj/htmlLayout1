@@ -2,4 +2,4 @@
 Practice for html/css
 
 Github pages
-https://github.com/wantingj/practiceHtmlCss
+http://wantingj.github.io/practiceHtmlCss/
