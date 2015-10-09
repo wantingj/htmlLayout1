@@ -1,0 +1,31 @@
+@import "compass/reset";
+@import "compass";
+
+$mainWidth: 1300px;
+
+body {
+    font-family: Arial;
+}
+
+.alignCenter {
+    margin: 0px auto;
+}
+
+.header {
+	background-color: #cccccc;
+	height: 10%;
+}
+
+.content {
+	section.banner {
+		height: 90%;
+		.centerBlock {
+			margin: 0 auto;
+			width: 50%;
+			height: 85%;
+		}
+		.bannerFooter {
+			height: 5%;
+		}
+	}
+}
