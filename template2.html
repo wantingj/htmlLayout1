@@ -2,58 +2,72 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Template 2</title>
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/style2.css">
 </head>
 <body>
 	<!-- div.header>(h1>img{logo})+(ul>(li>a{menu})*5)+(span>img{shopcart}) -->
 	<div class="header"><div class="alignCenter">
-		<h1><a href="./index.html">PRETTY GAL</a></h1>
+		<h1 class="logo"><a href="./index.html">PRETTY GAL</a></h1>
 		<ul>
-			<li><a href="">menu</a></li>
-			<li><a href="">menu</a></li>
-			<li><a href="">menu</a></li>
-			<li><a href="">menu</a></li>
-			<li><a href="">menu</a></li>
+			<li class="active"><a href="">Home</a></li>
+			<li><a href="">Shop</a></li>
+			<li><a href="">Sale</a></li>
+			<li><a href="">Customer Care</a></li>
+			<li><a href="">Stockists</a></li>
 		</ul>
-		<span><img src="" alt="">shopcart</img></span>
+		<a href="#" class="shopcart">0</a>
 	</div></div>
-	<div class="content">
-		<section class="banner">
-			<div class="centerBlock">
-				<h2>FALL & WINTER</h2>
-			</div>
-			<p class="bannerFooter">adddd</p>
-		</section>
-		<section class="promote"><div class="alignCenter">
-			<h3>YEAR ROUND</h3>
-			<hr class="short">
-			<h4>Must Have Items</h4>
-			<ul class="products">
-				<li>
-					<img src="" alt="EDITOR'S PICKS">
-					<span>EDITOR'S PICKS</span>
-				</li>
-				<li>
-					<img src="" alt="SALE">
-					<span>SALE</span>
-				</li>
-				<li>
-					<img src="" alt="GIT IN FOCUS">
-					<span>GIT IN FOCUS</span>
-				</li>
-			</ul>
-		</div></section>
+	<div class="banner">
+		<div class="alignCenter">
+			<h2>FALL & WINTER</h2><br>
+			<button type="button">Shop Now</button>
+		</div>
+		<p class="bannerFooter">FREE SHIPPING WORLWIDE</p>
+	</div>
+	<div class="promote alignCenter">
+		<h3>YEAR ROUND</h3>
+		<h4>Must Have Items</h4>
+		<div class="products">
+			<a href="#">
+				<h5 class="bottom">EDITOR'S PICKS</h5>
+				<img src="./img/2/product1.jpg" alt="EDITOR'S PICKS">
+			</a>
+			<a href="#">
+				<h5 class="sale">SALE</h5>
+				<img src="./img/2/product2.jpg" alt="SALE">
+			</a>
+			<a href="#">
+				<h5 class="bottom">GET IN FOCUS</h5>
+				<img src="./img/2/product3.jpg" alt="GIT IN FOCUS">
+			</a>
+		</div>
+		<div style="clear:both"></div>
 	</div>
 	<!-- div.footer>ul.info>li{txt}*3^p.copyRight -->
 	<div class="footer"><div class="alignCenter">
-		<ul class="info">
-			<li>txt</li>
-			<li>txt</li>
-			<li>txt</li>
-		</ul>
-		<p class="copyRight">copyRight</p>
+		<div class="info">
+			<div class="social">
+				<h5>STAY CONNECTED</h5>
+				<a href="#"><span class="fa fa-facebook"></span></a>
+				<a href="#"><span class="fa fa-twitter"></span></a>
+				<a href="#"><span class="fa fa-pinterest-p"></span></a>
+				<a href="#"><span class="fa fa-instagram"></span></a>
+			</div>
+			<div class="subscribe">
+				<h5>BE OUR FRIEND</h5>
+				<input type="text" placeholder="Email"><br>
+				<button type="button">Update Me</button>
+			</div>
+			<div class="contact">
+				<h5>NEED ASSISTANCE?</h5>
+				<p>123-456-7890</p>
+				<p>info@mysite.com</p>
+			</div>
+		</div>
+		<p class="copyRight">© 2023 by PRETTY GAL. Proudly created with Wix.com</p>
 	</div></div>
 </body>
 </html>

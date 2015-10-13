@@ -195,6 +195,7 @@ p {
   border-radius: 6px;
   border: none;
   color: white;
+  opacity: 1;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmY2E5MiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmViMDNhIi8+PHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiNmOTk1MDMiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmOTkzMDMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffca92), color-stop(50%, #feb03a), color-stop(51%, #f99503), color-stop(100%, #f99303));
@@ -202,17 +203,12 @@ p {
   background-image: -webkit-linear-gradient(#ffca92 0%, #feb03a 50%, #f99503 51%, #f99303 100%);
   background-image: linear-gradient(#ffca92 0%, #feb03a 50%, #f99503 51%, #f99303 100%);
 }
-/* line 125, ../sass/style1.scss */
+/* line 119, ../sass/style1.scss */
 .crystalButton:hover {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZDRhNiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmViODRlIi8+PHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiNmYzllMTQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmYzljMTQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffd4a6), color-stop(50%, #feb84e), color-stop(51%, #fc9e14), color-stop(100%, #fc9c14));
-  background-image: -moz-linear-gradient(#ffd4a6 0%, #feb84e 50%, #fc9e14 51%, #fc9c14 100%);
-  background-image: -webkit-linear-gradient(#ffd4a6 0%, #feb84e 50%, #fc9e14 51%, #fc9c14 100%);
-  background-image: linear-gradient(#ffd4a6 0%, #feb84e 50%, #fc9e14 51%, #fc9c14 100%);
+  opacity: 0.9;
 }
 
-/* line 135, ../sass/style1.scss */
+/* line 124, ../sass/style1.scss */
 .socialButton {
   border-radius: 8px;
   border: none;
@@ -223,21 +219,21 @@ p {
   font-size: 2em;
   margin: 0 11px;
 }
-/* line 144, ../sass/style1.scss */
+/* line 133, ../sass/style1.scss */
 .socialButton:hover {
   background-color: #4f4f4f;
 }
 
-/* line 149, ../sass/style1.scss */
+/* line 138, ../sass/style1.scss */
 .footer {
   background-color: #EEEEEE;
   line-height: 100px;
 }
-/* line 152, ../sass/style1.scss */
+/* line 141, ../sass/style1.scss */
 .footer .mainWidth {
   position: relative;
 }
-/* line 154, ../sass/style1.scss */
+/* line 143, ../sass/style1.scss */
 .footer .mainWidth .social {
   position: absolute;
   right: 0;

@@ -63,33 +63,273 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 6, ../sass/style2.scss */
-body {
-  font-family: Arial;
+/* line 7, ../sass/style2.scss */
+html, body {
+  height: 100%;
 }
 
 /* line 10, ../sass/style2.scss */
+body {
+  font-family: Arial;
+  text-align: center;
+}
+
+/* line 14, ../sass/style2.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 17, ../sass/style2.scss */
 .alignCenter {
   margin: 0px auto;
 }
 
-/* line 14, ../sass/style2.scss */
+/* line 21, ../sass/style2.scss */
 .header {
-  background-color: #cccccc;
+  background-color: #525050;
   height: 10%;
+  min-height: 60px;
+}
+/* line 26, ../sass/style2.scss */
+.header .alignCenter {
+  width: 1024px;
+  height: 100%;
+  position: relative;
+}
+/* line 31, ../sass/style2.scss */
+.header .alignCenter::before {
+  content: '';
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  background: #f00;
+}
+/* line 39, ../sass/style2.scss */
+.header .alignCenter .logo {
+  display: inline;
+}
+/* line 44, ../sass/style2.scss */
+.header .alignCenter .logo a {
+  color: #C8C8C8;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+/* line 49, ../sass/style2.scss */
+.header .alignCenter .logo a:hover {
+  opacity: .8;
+}
+/* line 54, ../sass/style2.scss */
+.header .alignCenter ul {
+  display: inline-block;
+}
+/* line 56, ../sass/style2.scss */
+.header .alignCenter ul li {
+  display: inline-block;
+  width: 140px;
+  line-height: 1.2em;
+  text-align: center;
+  color: #C8C8C8;
+}
+/* line 62, ../sass/style2.scss */
+.header .alignCenter ul li.active {
+  color: white;
+}
+/* line 65, ../sass/style2.scss */
+.header .alignCenter ul li a {
+  display: block;
+  color: inherit;
+}
+/* line 68, ../sass/style2.scss */
+.header .alignCenter ul li a:hover {
+  color: white;
+}
+/* line 74, ../sass/style2.scss */
+.header .alignCenter .shopcart {
+  background-image: url(../img/2/shopcart.png);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 100% 100%;
+  line-height: 3.5em;
+  color: white;
+}
+/* line 82, ../sass/style2.scss */
+.header .alignCenter .shopcart:hover {
+  font-weight: bold;
 }
 
-/* line 20, ../sass/style2.scss */
-.content section.banner {
+/* line 91, ../sass/style2.scss */
+.banner {
+  position: relative;
+  background-image: url("../img/2/banner.jpg");
   height: 90%;
 }
-/* line 22, ../sass/style2.scss */
-.content section.banner .centerBlock {
-  margin: 0 auto;
-  width: 50%;
-  height: 85%;
+/* line 95, ../sass/style2.scss */
+.banner .alignCenter {
+  width: 682.66667px;
+  padding: 40px 0 30px;
+  position: relative;
+  top: 35%;
+  background-color: rgba(255, 255, 255, 0.6);
 }
-/* line 27, ../sass/style2.scss */
-.content section.banner .bannerFooter {
-  height: 5%;
+/* line 102, ../sass/style2.scss */
+.banner .alignCenter h2 {
+  font-size: 3.5em;
+  font-family: serif;
+  font-weight: bold;
+}
+/* line 107, ../sass/style2.scss */
+.banner .alignCenter button {
+  padding: 13px 60px;
+  border: none;
+  color: white;
+  background-color: #333;
+  font-size: 1.3em;
+}
+/* line 113, ../sass/style2.scss */
+.banner .alignCenter button:hover {
+  opacity: .8;
+}
+/* line 118, ../sass/style2.scss */
+.banner .bannerFooter {
+  background-color: #cccccc;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 3em;
+  letter-spacing: 0.3em;
+}
+
+/* line 127, ../sass/style2.scss */
+.promote {
+  padding: 30px 0;
+}
+/* line 128, ../sass/style2.scss */
+.promote.alignCenter {
+  width: 1004px;
+}
+/* line 133, ../sass/style2.scss */
+.promote h3 {
+  font-size: 2em;
+  padding: 30px 0;
+  font-family: serif;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+}
+/* line 140, ../sass/style2.scss */
+.promote h4 {
+  font-size: 1.5em;
+  padding: 30px 0;
+  letter-spacing: 0.2em;
+}
+/* line 141, ../sass/style2.scss */
+.promote h4::before {
+  content: "";
+  height: 2px;
+  width: 40px;
+  background: #6F6F70;
+  display: block;
+  text-align: center;
+  margin: 0 auto 2em;
+}
+/* line 154, ../sass/style2.scss */
+.promote .products {
+  margin: 4% 0;
+}
+/* line 156, ../sass/style2.scss */
+.promote .products a {
+  float: left;
+  width: 31%;
+  margin: 0 1%;
+  position: relative;
+}
+/* line 162, ../sass/style2.scss */
+.promote .products a h5 {
+  position: absolute;
+  width: 100%;
+}
+/* line 165, ../sass/style2.scss */
+.promote .products a h5.bottom {
+  background-color: #2F3031;
+  color: white;
+  bottom: 0;
+  line-height: 3.5em;
+}
+/* line 171, ../sass/style2.scss */
+.promote .products a h5.sale {
+  font-size: 3em;
+  top: 15%;
+  color: black;
+  font-family: serif;
+  letter-spacing: 0.2em;
+}
+/* line 179, ../sass/style2.scss */
+.promote .products a img {
+  width: 100%;
+}
+
+/* line 186, ../sass/style2.scss */
+.footer {
+  color: #C8C8C8;
+  background-color: #525050;
+  margin-top: 50px;
+  padding: 80px 0 20px;
+}
+/* line 191, ../sass/style2.scss */
+.footer .alignCenter {
+  width: 1024px;
+}
+/* line 195, ../sass/style2.scss */
+.footer .info div {
+  float: left;
+  width: 33%;
+}
+/* line 200, ../sass/style2.scss */
+.footer .info div.social a {
+  cursor: pointer;
+  padding: 8px;
+  font-size: 1.2em;
+  line-height: 2.8em;
+  color: white;
+}
+/* line 206, ../sass/style2.scss */
+.footer .info div.social a:hover {
+  opacity: .8;
+}
+/* line 213, ../sass/style2.scss */
+.footer .info div.subscribe h5 {
+  text-align: left;
+}
+/* line 216, ../sass/style2.scss */
+.footer .info div.subscribe input {
+  width: 93%;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #525050;
+  border: 2px solid white;
+  color: white;
+}
+/* line 224, ../sass/style2.scss */
+.footer .info div.subscribe button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #D1D1D1;
+  color: #121212;
+  float: right;
+}
+/* line 230, ../sass/style2.scss */
+.footer .info div.subscribe button:hover {
+  opacity: .8;
+}
+/* line 236, ../sass/style2.scss */
+.footer .info div.contact p {
+  color: white;
+  margin-top: 9px;
+}
+/* line 243, ../sass/style2.scss */
+.footer .copyRight {
+  clear: both;
+  line-height: 10em;
 }

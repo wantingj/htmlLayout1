@@ -108,27 +108,16 @@ p {
 }
 
 .crystalButton {
-    $c1: #FFCA92;
-    $c2: #FEB03A;
-    $c3: #F99503;
-    $c4: #F99303;
-    $amount: 4%;
-
     margin-bottom: 8px;
     padding: 20px 56px;
     font-size: 2.0em;
     border-radius: 6px;
     border: none;
     color: white;
-
-    @include background-image(linear-gradient($c1 0%,$c2 50%,$c3 51%,$c4 100%));
+    opacity: 1;
+    @include background-image(linear-gradient(#FFCA92 0%,#FEB03A 50%,#F99503 51%,#F99303 100%));
     &:hover {
-        @include background-image(linear-gradient(
-            lighten($c1, $amount) 0%,
-            lighten($c2, $amount) 50%,
-            lighten($c3, $amount) 51%,
-            lighten($c4, $amount) 100%
-        ));
+        opacity: 0.9;
     }
 }
 
