@@ -244,20 +244,25 @@ a {
   width: 31%;
   margin: 0 1%;
   position: relative;
+  opacity: .8;
 }
 /* line 162, ../sass/style2.scss */
+.promote .products a:hover {
+  opacity: 1;
+}
+/* line 166, ../sass/style2.scss */
 .promote .products a h5 {
   position: absolute;
   width: 100%;
 }
-/* line 165, ../sass/style2.scss */
+/* line 169, ../sass/style2.scss */
 .promote .products a h5.bottom {
   background-color: #2F3031;
   color: white;
   bottom: 0;
   line-height: 3.5em;
 }
-/* line 171, ../sass/style2.scss */
+/* line 175, ../sass/style2.scss */
 .promote .products a h5.sale {
   font-size: 3em;
   top: 15%;
@@ -265,28 +270,28 @@ a {
   font-family: serif;
   letter-spacing: 0.2em;
 }
-/* line 179, ../sass/style2.scss */
+/* line 183, ../sass/style2.scss */
 .promote .products a img {
   width: 100%;
 }
 
-/* line 186, ../sass/style2.scss */
+/* line 190, ../sass/style2.scss */
 .footer {
   color: #C8C8C8;
   background-color: #525050;
   margin-top: 50px;
   padding: 80px 0 20px;
 }
-/* line 191, ../sass/style2.scss */
+/* line 195, ../sass/style2.scss */
 .footer .alignCenter {
   width: 1024px;
 }
-/* line 195, ../sass/style2.scss */
+/* line 199, ../sass/style2.scss */
 .footer .info div {
   float: left;
   width: 33%;
 }
-/* line 200, ../sass/style2.scss */
+/* line 204, ../sass/style2.scss */
 .footer .info div.social a {
   cursor: pointer;
   padding: 8px;
@@ -294,15 +299,15 @@ a {
   line-height: 2.8em;
   color: white;
 }
-/* line 206, ../sass/style2.scss */
+/* line 210, ../sass/style2.scss */
 .footer .info div.social a:hover {
   opacity: .8;
 }
-/* line 213, ../sass/style2.scss */
+/* line 217, ../sass/style2.scss */
 .footer .info div.subscribe h5 {
   text-align: left;
 }
-/* line 216, ../sass/style2.scss */
+/* line 220, ../sass/style2.scss */
 .footer .info div.subscribe input {
   width: 93%;
   padding: 10px;
@@ -311,7 +316,7 @@ a {
   border: 2px solid white;
   color: white;
 }
-/* line 224, ../sass/style2.scss */
+/* line 228, ../sass/style2.scss */
 .footer .info div.subscribe button {
   padding: 5px 10px;
   border: none;
@@ -319,16 +324,16 @@ a {
   color: #121212;
   float: right;
 }
-/* line 230, ../sass/style2.scss */
+/* line 234, ../sass/style2.scss */
 .footer .info div.subscribe button:hover {
   opacity: .8;
 }
-/* line 236, ../sass/style2.scss */
+/* line 240, ../sass/style2.scss */
 .footer .info div.contact p {
   color: white;
   margin-top: 9px;
 }
-/* line 243, ../sass/style2.scss */
+/* line 247, ../sass/style2.scss */
 .footer .copyRight {
   clear: both;
   line-height: 10em;

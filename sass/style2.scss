@@ -158,6 +158,10 @@ a {
 			width: 31%;
 			margin: 0 1%;
 			position: relative;
+			opacity: .8;
+			&:hover {
+				opacity: 1;
+			}
 
 			h5 {
 				position: absolute;
